@@ -18,7 +18,7 @@ function update_system_packages() {
 
 function install_dependencies() {
     install_log "Installing required packages"
-    sudo apt-get install screen rsync zip jq || install_error "Couldn't install dependencies"
+    sudo apt-get install screen rsync zip jq awscli || install_error "Couldn't install dependencies"
 }
 
 function enable_init() {
