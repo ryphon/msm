@@ -1,5 +1,5 @@
-msm_dir="/opt/msm"
-msm_user="minecraft"
+msm_dir="/home/ec2-user/msm"
+msm_user="ec2-user"
 msm_user_system=false
 dl_dir="$(mktemp -d -t msm-XXX)"
 
