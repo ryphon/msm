@@ -7,6 +7,10 @@
 
 A single init script which makes running multiple Minecraft/Bukkit servers easier for us admins.
 
+I *really* like MSM but it's nowhere near updated enough for what I'd like it to be.
+
+So.. fork ahoy.
+
 ## Quick Installers
 
 Install MSM on a **debian box**:
