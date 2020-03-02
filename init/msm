@@ -372,6 +372,7 @@ world_backup() {
 	manager_property WORLD_ARCHIVE_ENABLED
 	manager_property RDIFF_BACKUP_ENABLED
 	manager_property RSYNC_BACKUP_ENABLED
+	manager_property S3_BACKUP_ENABLED
 	local server_id="${WORLD_SERVER_ID[$1]}"
 	local containing_dir="$(dirname "${WORLD_PATH[$1]}")"
 	local dir_name="$(basename "${WORLD_PATH[$1]}")"
@@ -517,9 +518,11 @@ world_property() {
 				manager_property WORLD_ARCHIVE_PATH
 				manager_property WORLD_RDIFF_PATH
 				manager_property WORLD_RSYNC_PATH
+				manager_property WORLD_S3_PATH
 				WORLD_BACKUP_PATH[$1]="$SETTINGS_WORLD_ARCHIVE_PATH/${SERVER_NAME[$sid]}/${WORLD_NAME[$1]}"
 				RDIFF_BACKUP_PATH[$1]="$SETTINGS_WORLD_RDIFF_PATH/${SERVER_NAME[$sid]}/${WORLD_NAME[$1]}"
 				RSYNC_BACKUP_PATH[$1]="$SETTINGS_WORLD_RSYNC_PATH/${SERVER_NAME[$sid]}/${WORLD_NAME[$1]}"
+				S3_BACKUP_PATH[$1]="$SETTINGS_WORLD_S3_PATH/${SERVER_NAME[$sid]}/${WORLD_NAME[$1]}"
 				;;
 			RAMDISK_PATH)
 				manager_property RAMDISK_STORAGE_ENABLED
