@@ -405,11 +405,10 @@ world_backup() {
 	fi
 
 	if [[ "$SETTINGS_S3_BACKUP_ENABLED" == "true" ]]; then
-		echo -n "rsync-backup world \"${WORLD_NAME[$1]}\"... "
+		echo -n "s3-backup world \"${WORLD_NAME[$1]}\"... "
 		file_name="$(date "+%F-%H-%M-%S")"
 		server_property "$server_id" USERNAME
-        # TODO:
-		# as_user "${SERVER_USERNAME[$server_id]}" "mkdir -p \"${S3_BACKUP_PATH[$1]}\" && cd \"$containing_dir\" && rsync -aH --link-dest=\"${RSYNC_BACKUP_PATH[$1]}/latest\" \"${dir_name}\" \"${RSYNC_BACKUP_PATH[$1]}/${file_name}\" && rm -f \"${RSYNC_BACKUP_PATH[$1]}/latest\" && ln -s \"${file_name}\" \"${RSYNC_BACKUP_PATH[$1]}/latest\""
+		as_user "${SERVER_USERNAME[$server_id]}" "cd \"$containing_dir\" && aws s3 sync ${dir_name} \"${S3_BACKUP_PATH[$1]}/latest\" && aws s3 sync ${dir_name} \"${S3_BACKUP_PATH[$1]}/${file_name}\" && rm -f \"${S3_BACKUP_PATH[$1]}/latest\" && ln -s \"${file_name}\" \"${S3_BACKUP_PATH[$1]}/latest\""
 		echo "Done."
 	fi
 
