@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERNAME="minecraft"
+USERNAME="ec2-user"
 DIR="${MSM_DIR:-$(pwd)}"
 DEFUALT_CONF="${MSM_DEFAULT_CONF:-${DIR}/msm.conf}"
 TESTS_DIR="${MSM_TESTS_DIR:-${DIR}/tests}"
