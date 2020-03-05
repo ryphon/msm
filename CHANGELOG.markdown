@@ -6,6 +6,16 @@ Visit https://github.com/msmhq/msm for more information.
 Change Log
 ----------
 
+### [0.9.11](https://github.com/ryphon/msm/compare/0.9.10...0.9.11)
+
+### [0.9.10](https://github.com/msmhq/msm/compare/0.9.4...0.9.10)
+
+* Added jq as dependancy
+* Some minor typos and spacing issues corrected
+* Update TravisCI [#324][#324]
+* Handling new MC server urls [#326][#326]
+* Snapshot handling
+
 ### [0.9.4](https://github.com/msmhq/msm/compare/0.9.3...0.9.4)
 
 * Added versioning support for the following properties. [#310][#310]

@@ -15,11 +15,11 @@ So.. fork ahoy.
 
 Install MSM on a **debian box**:
 
-    wget -q http://git.io/Sxpr9g -O /tmp/msm && bash /tmp/msm
+    wget -q https://git.io/JvVnk -O /tmp/msm && bash /tmp/msm
 
 Or install MSM under **RedHat**:
 
-	wget -q http://git.io/lu0ULA -O /tmp/msm && bash /tmp/msm
+	wget -q https://git.io/JvVnJ -O /tmp/msm && bash /tmp/msm
 
 Or [suggest a new platform][issues].
 
@@ -80,6 +80,8 @@ For more information on SemVer, visit http://semver.org/.
 ## Acknowledgements
 
 This code grew out of an old version of [Ahtenus' Minecraft Init Script][ahtenus-minecraft-init].
+
+The upgrades were done through love. If marcuswhybrow isn't happy, lmk I'll pull it off gh
 
 [we-snapshot]: http://wiki.sk89q.com/wiki/WorldEdit/Snapshots
 [ahtenus-minecraft-init]: https://github.com/Ahtenus/minecraft-init
