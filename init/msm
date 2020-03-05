@@ -28,7 +28,7 @@
 
 
 # The Minecraft Server Manager version, use "msm version" to check yours.
-VERSION="0.9.12a"
+VERSION="0.9.13"
 
 # Source, if it exists, the msm profile.d script
 if [ -f "/etc/profile.d/msm.sh" ]; then
@@ -3295,7 +3295,7 @@ register_settings() {
 	register_setting RDIFF_BACKUP_ROTATION "7"
 
 
-	register_setting UPDATE_URL "https://raw.githubusercontent.com/msmhq/msm/latest"
+	register_setting UPDATE_URL "https://raw.githubusercontent.com/ryphon/msm/latest"
 
 	register_setting WORLD_ARCHIVE_PATH "/opt/msm/archives/worlds"
 	register_setting LOG_ARCHIVE_PATH "/opt/msm/archives/logs"
@@ -3303,6 +3303,9 @@ register_settings() {
 
 	register_setting RSYNC_BACKUP_ENABLED "false"
 	register_setting WORLD_RSYNC_PATH "/opt/msm/rsync/worlds"
+
+    register_setting S3_BACKUP_ENABLED "false"
+    register_setting WORLD_S3_PATH "s3://fake-bucket"
 
 	register_setting JARGROUP_TARGET "target.txt"
 	register_setting JARGROUP_DOWNLOAD_DIR "downloads"
