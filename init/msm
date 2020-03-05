@@ -2158,7 +2158,7 @@ command_version() {
 	local version="$VERSION"
 
 	if [ "${version:0:1}" -eq 0 ]; then
-		version="$version Beta"
+		version="$version Beta +R"
 	fi
 
 	echo "Minecraft Server Manager $version"
