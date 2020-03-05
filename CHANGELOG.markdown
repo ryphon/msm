@@ -8,6 +8,10 @@ Change Log
 
 ### [0.9.11](https://github.com/ryphon/msm/compare/0.9.10...0.9.11)
 
+* S3 backups
+* Defaulting to ec2-user rather than 'minecraft' user.
+* Pushing towards Amazon EC2 based installs as default
+
 ### [0.9.10](https://github.com/msmhq/msm/compare/0.9.4...0.9.10)
 
 * Added jq as dependancy
