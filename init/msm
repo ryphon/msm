@@ -28,7 +28,8 @@
 
 
 # The Minecraft Server Manager version, use "msm version" to check yours.
-VERSION="0.9.11b"
+VERSION="0.9.11aa"
+# TODO: Get a way to "force" update in the msm update command. Want to overwrite everything when asked.
 
 # Source, if it exists, the msm profile.d script
 if [ -f "/etc/profile.d/msm.sh" ]; then
